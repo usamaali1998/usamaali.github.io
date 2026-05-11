@@ -884,14 +884,14 @@
   </div>
 
   <div>
-    <div class="contact-form">
-      <input type="text" placeholder="Your name">
-      <input type="email" placeholder="Your email">
-      <input type="text" placeholder="Subject">
-      <textarea placeholder="Your message"></textarea>
-      <button onclick="handleFormSubmit(event)">Send message</button>
-    </div>
-  </div>
+  <form class="contact-form" action="https://formspree.io/f/mvzldelr" method="POST">
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="email" name="email" placeholder="Your email" required>
+    <input type="text" name="subject" placeholder="Subject" required>
+    <textarea name="message" placeholder="Your message" required></textarea>
+    <button type="submit">Send message</button>
+  </form>
+</div>
 </div>
 
 <footer>
